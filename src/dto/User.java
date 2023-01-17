@@ -1,14 +1,21 @@
-package data;
+package dto;
 
 public abstract class User {
     //implevents DataService не пишется, это связано с Solid
     // !!!NB!!! Читать что такое Солид и почему так не пишется
+
+    private String fio;
     private String firstName;
     private String lastName;
     private int id;
     private int age;
     private int YearOfBirth;
     private  int passport;
+
+    public User (String fio){
+        this.fio=fio;
+    }
+
 
     public User(String firstName, String lastName, int id, int age, int yearOfBirth, int passport) {
         this.firstName = firstName;

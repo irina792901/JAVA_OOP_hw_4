@@ -1,6 +1,6 @@
-package data.comparator;
+package dto.comparator;
 
-import data.User;
+import dto.User;
 
 import java.util.Comparator;
 

@@ -1,16 +1,16 @@
 package service;
 
-import data.StudentGroup;
-import data.Teacher;
-import data.User;
+import dto.StudentGroup;
+import dto.Teacher;
+import dto.User;
 import repository.TeacherRepository;
 import util.ReaderFromTxt;
 import util.WriterToTxt;
 
-public class TeacherServiceImpl implements DataService{
+public class TeacherService implements DataService{
     private final TeacherRepository teacherRepository;
 
-    public TeacherServiceImpl(TeacherRepository teacherRepository) {
+    public TeacherService(TeacherRepository teacherRepository) {
         this.teacherRepository = teacherRepository;
     }
 

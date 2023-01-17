@@ -1,9 +1,13 @@
-package data;
+package dto;
 
 public class Student extends User implements Comparable<Student>{
     private int course;
     private String department;
     private int groupNumber;
+
+    public Student (String fio){
+        super(fio);
+    }
 
     public Student(String firstName, String lastName, int id, int age, int yearOfBirth, int passport, int course, String department, int groupNumber) {
         super(firstName, lastName, id, age, yearOfBirth, passport);
@@ -12,9 +16,10 @@ public class Student extends User implements Comparable<Student>{
         this.groupNumber = groupNumber;
     }
 
-    public Student(String firstName) {
-        super(firstName);
-    }
+//    public Student(String firstName) {
+//        super(firstName);
+//    }
+
 
     public int getCourse() {
         return course;
@@ -39,6 +44,7 @@ public class Student extends User implements Comparable<Student>{
     public void setGroupNumber(int groupNumber) {
         this.groupNumber = groupNumber;
     }
+
 
     @Override
     public int compareTo(Student student) {

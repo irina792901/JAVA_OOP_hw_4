@@ -1,8 +1,17 @@
 package repository;
 
-import data.Student;
+import dto.Student;
 
 public class StudentRepository implements UserRepository<Student, Integer>{
+
+    public void deleteStudent(Student student){
+    }
+    public void deleteStudentByFio(String fio){
+
+    }
+    public void deleteStudentByGroupNumberAndStudentAge(int groupNumber, int studentAge){
+
+    }
 
     @Override
     public Student save(Student entity) {

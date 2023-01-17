@@ -1,6 +1,6 @@
-package data;
+package dto;
 
-import data.iterator.StudentGroupIterator;
+import dto.iterator.StudentGroupIterator;
 
 import java.util.Iterator;
 import java.util.List;

@@ -1,9 +1,9 @@
 package service;
 
-import data.Student;
-import data.StudentGroup;
-import data.Teacher;
-import data.User;
+import dto.Student;
+import dto.StudentGroup;
+import dto.Teacher;
+import dto.User;
 import repository.Repository;
 import util.ReaderFromTxt;
 

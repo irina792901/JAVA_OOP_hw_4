@@ -1,16 +1,16 @@
 package service;
 
-import data.Student;
-import data.StudentGroup;
-import data.User;
+import dto.Student;
+import dto.StudentGroup;
+import dto.User;
 import repository.StudentRepository;
 import util.ReaderFromTxt;
 import util.WriterToTxt;
 
-public class StudentServiceImpl implements DataService {
+public class StudentService implements DataService {
     private final StudentRepository studentRepository;
 
-    public StudentServiceImpl(StudentRepository studentRepository) {
+    public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
 
@@ -34,9 +34,16 @@ public class StudentServiceImpl implements DataService {
         return null;
     }
 
-    @Override
-    public void removeStudent(String firstName, String lastName) {
+    public void deleteStudentByFio(String fio) {
+        studentRepository.deleteStudentByFio(fio);
+    }
 
+    public void deleteStudent(Student student) {
+        studentRepository.deleteStudent(student);
+    }
+
+    public void deleteStudentByGroupNumberAndStudentAge(int groupNumber, int studentAge){
+        studentRepository.deleteStudentByGroupNumberAndStudentAge(groupNumber, studentAge);
     }
 
     @Override

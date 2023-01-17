@@ -1,6 +1,6 @@
-package data.comparator;
+package dto.comparator;
 
-import data.GroupStream;
+import dto.GroupStream;
 
 import java.util.Comparator;
 

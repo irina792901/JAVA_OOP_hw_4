@@ -1,12 +1,12 @@
 package controller;
 
-import data.Teacher;
-import service.TeacherServiceImpl;
+import dto.Teacher;
+import service.TeacherService;
 
 public class TeacherController implements UserControllerInterface<Teacher, Integer>{
-    private final TeacherServiceImpl teacherService;
+    private final TeacherService teacherService;
 
-    public TeacherController(TeacherServiceImpl teacherService) {
+    public TeacherController(TeacherService teacherService) {
         this.teacherService = teacherService;
     }
 

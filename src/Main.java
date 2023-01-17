@@ -1,10 +1,9 @@
-import data.User;
-import data.comparator.UserComparator;
+import dto.User;
+import dto.comparator.UserComparator;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * @author Ирина Шипунова группа 3417/2

@@ -1,8 +1,8 @@
 package util;
 
-import data.Student;
-import data.Teacher;
-import data.User;
+import dto.Student;
+import dto.Teacher;
+import dto.User;
 
 import java.util.List;
 

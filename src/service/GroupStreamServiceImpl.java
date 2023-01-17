@@ -1,7 +1,7 @@
 package service;
 
-import data.GroupStream;
-import data.comparator.GroupStreamComparator;
+import dto.GroupStream;
+import dto.comparator.GroupStreamComparator;
 
 import java.util.Collections;
 import java.util.List;

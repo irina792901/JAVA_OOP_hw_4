@@ -1,8 +1,8 @@
 package controller;
 
-import data.GroupStream;
-import data.Student;
-import data.StudentGroup;
+import dto.GroupStream;
+import dto.Student;
+import dto.StudentGroup;
 import service.*;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class Controller {
     private final StudentGroupService studentGroupService;
     private final GroupStreamService groupStreamService;
 
-    public Controller(StudentServiceImpl studentService, TeacherServiceImpl teacherService, StudentGroupServiceImpl studentGroupService, GroupStreamServiceImpl<G, Number> groupStreamService) {
+    public Controller(StudentService studentService, TeacherService teacherService, StudentGroupServiceImpl studentGroupService, GroupStreamServiceImpl<GroupStream, Number> groupStreamService) {
         this.studentService = studentService;
         this.teacherService = teacherService;
         this.studentGroupService = studentGroupService;

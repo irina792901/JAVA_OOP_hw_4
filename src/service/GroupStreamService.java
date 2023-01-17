@@ -1,6 +1,6 @@
 package service;
 
-import data.GroupStream;
+import dto.GroupStream;
 
 import java.util.List;
 
